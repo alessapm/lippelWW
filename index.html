@@ -7,27 +7,55 @@
     <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Dosis|Montserrat" rel="stylesheet">
     <!-- stylesheets -->
+  <link rel="stylesheet" href="materialize/css/materialize.min.css">
   <link rel="stylesheet" href="style.css">
     <!-- font awesome -->
   <script src="https://use.fontawesome.com/e4a8e5d508.js"></script>
       <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="app.js"></script>
+    <!-- Materialize -->
+  <script src="materialize/js/materialize.min.js" type="text/javascript" charset="utf-8" async defer></script>
+    <!-- custom js -->
+  <script src="app.js" type="text/javascript" charset="utf-8" async defer></script>
 </head>
 <body>
   <main>
-    <div class="container">
-      <div class="header">
+
+      <nav>
+        <img src="LippelLogo.svg" alt="Logo">
         <ul>
           <li>ABOUT</li>
           <li>GALLERY</li>
           <li>CONTACT</li>
         </ul>
-      </div>
+      </nav>
       <div class="banner parallax-container">
         <div class="parallax"><img src="clem-onojeghuo.jpg" alt="woodworking"></div>
       </div>
-    </div>
+      <div class="container section white">
+        <div class="about"></div>
+        <div class="section-title">
+          <h2>FEATURED WORKS</h2>
+        </div>
+        <div class="carousel"></div>
+        <div class="gallery"></div>
+        <div class="section-title">
+          <h2>CONTACT</h2>
+        </div>
+        <div class="contact-form">
+        <!-- div.form will be replaced by actual form w node mailer integration -->
+          <div class="form"></div>
+          <button>SUBMIT</button>
+        </div>
+      </div>
+      <footer>
+        <div class="icon-wrapper">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        </div>
+      </footer>
+
   </main>
 </body>
 </html>
