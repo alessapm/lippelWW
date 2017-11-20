@@ -1,6 +1,51 @@
 * {
   outline: none;
   font-family: "Montserrat", sans-serif;
+  color: #947870;
+  background-color: #FEF5E7; }
+
+footer {
+  display: flex;
+  justify-content: flex-end; }
+
+hr {
   color: #947870; }
+
+li:hover {
+  color: #FE8C6D;
+  transition: all .3s linear;
+  cursor: pointer; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FEF5E7; }
+
+ul {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.fa {
+  height: 100px; }
+
+.icon-wrapper {
+  width: 400px;
+  display: flex;
+  justify-content: space-between; }
+
+.parallax {
+  z-index: 1; }
+  .parallax img {
+    width: 100%; }
+
+.section-title {
+  text-align: center;
+  margin-top: 50px; }
+
+#logo {
+  width: 80px; }
 
 /*# sourceMappingURL=style.css.map */

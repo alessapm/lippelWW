@@ -11,8 +11,62 @@ $section-border: 2px solid $light-brown;
   outline: none;
   font-family: $font-stack;
   color: $dark-brown;
+  background-color: $beige;
 }
 
+footer {
+  display: flex;
+  justify-content: flex-end;
+}
 
+hr {
+  color: $dark-brown;
+}
+
+li:hover {
+  color: $accent;
+  transition: all .3s linear;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: $beige;
+}
+
+ul {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.fa {
+  height: 100px;
+}
+
+.icon-wrapper {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.parallax {
+  z-index: 1;
+  img {
+    width: 100%;
+  }
+}
+
+.section-title {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#logo {
+  width: 80px;
+}
 
 
