@@ -1,0 +1,6 @@
+   $(document).ready(() => {
+
+      $('.parallax').parallax();
+
+    });
+
