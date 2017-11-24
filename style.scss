@@ -35,21 +35,29 @@ nav {
   display: flex;
   justify-content: space-between;
   background-color: $beige;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 ul {
   width: 40%;
   display: flex;
   justify-content: space-between;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
-.carousel, .contact-form {
+.carousel, .form {
   border: 1px solid $light-brown;
   width: 100%;
   height: 400px;
   margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
 }
 
 .gallery {
@@ -87,7 +95,14 @@ ul {
   margin: 5px;
   border-radius: $radius;
   cursor: pointer;
+  background-size: cover;
+  transition: all .2s ease-in;
 }
+
+.pic:hover {
+  box-shadow: 1px 1px 2px $dark-brown;
+}
+
 
 .section-title {
   text-align: center;
@@ -96,6 +111,26 @@ ul {
 
 #logo {
   width: 80px;
+}
+
+#pic1 {
+  background-image: url('img/chuttersnap-176806-compressed.jpg');
+}
+
+#pic2 {
+  background-image: url('img/delanoix2-compressed.jpg');
+}
+
+#pic3 {
+  background-image: url('img/clem-onojeghuo.jpg');
+}
+
+#submit-btn {
+  width: 25%;
+  color: $beige;
+  border-radius: $radius;
+  background-color: $accent;
+  border: 2px $light-brown outset;
 }
 
 
