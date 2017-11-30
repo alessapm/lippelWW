@@ -6,7 +6,7 @@ $accent: #750000;
 $old-accent: #FE8C6D;
 $black: #2B2624;
 $radius: 3px;
-$section-border: 2px solid $light-brown;
+$section-border: 1px solid $light-brown;
 
 * {
   outline: none;
@@ -47,7 +47,7 @@ ul {
 }
 
 .carousel, .form {
-  border: 1px solid $light-brown;
+  border: $section-border;
   width: 100%;
   height: 400px;
   margin-bottom: 30px;
