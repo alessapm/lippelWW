@@ -2,7 +2,8 @@ $font-stack: 'Montserrat', sans-serif;
 $beige: #FEF5E7;
 $light-brown: #E3BD97;
 $dark-brown: #947870;
-$accent: #FE8C6D;
+$accent: #750000;
+$old-accent: #FE8C6D;
 $black: #2B2624;
 $radius: 3px;
 $section-border: 2px solid $light-brown;
@@ -100,7 +101,8 @@ ul {
 }
 
 .pic:hover {
-  box-shadow: 1px 1px 2px $dark-brown;
+  box-shadow: 2px 2px 5px $dark-brown;
+  border: 1px solid $dark-brown;
 }
 
 
