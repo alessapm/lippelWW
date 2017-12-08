@@ -1,17 +1,23 @@
 $font-stack: 'Montserrat', sans-serif;
-$beige: #FEF5E7;
-$light-brown: #E3BD97;
-$dark-brown: #947870;
-$accent: #750000;
-$old-accent: #FE8C6D;
+
+// $beige: #FFFBF1;
+// $border-color: #E3BD97;
+// $text-color: #947870;
+// $accent: #FE8C6D;
+
+$beige: #F9F7F4;
+$text-color: #364C53;
+$border-color: #A46938;
+$accent: #ADB5BA;
+
 $black: #2B2624;
 $radius: 3px;
-$section-border: 1px solid $light-brown;
+$section-border: 2px solid $border-color;
 
 * {
   outline: none;
   font-family: $font-stack;
-  color: $dark-brown;
+  color: $text-color;
   background-color: $beige;
 }
 
@@ -23,11 +29,12 @@ footer {
 }
 
 hr {
-  border: 1px solid $accent;
+  border: 1px solid $text-color;
 }
 
 li:hover {
   color: $accent;
+  font-weight: bold;
   transition: all .3s linear;
   cursor: pointer;
 }
@@ -38,12 +45,17 @@ nav {
   background-color: $beige;
   padding-left: 10px;
   padding-right: 10px;
+  border-bottom: 5px solid $accent;
 }
 
 ul {
   width: 40%;
   display: flex;
   justify-content: space-between;
+}
+
+.banner {
+  border-top: 5px solid $text-color;
 }
 
 .carousel, .form {
@@ -91,7 +103,7 @@ ul {
 .pic {
   height: 170px;
   width: 170px;
-  border: 1px solid $light-brown;
+  border: 1px solid $border-color;
   padding: 10px;
   margin: 5px;
   border-radius: $radius;
@@ -101,8 +113,8 @@ ul {
 }
 
 .pic:hover {
-  box-shadow: 2px 2px 5px $dark-brown;
-  border: 1px solid $dark-brown;
+  box-shadow: 2px 2px 5px $text-color;
+  border: 1px solid $text-color;
 }
 
 
@@ -131,8 +143,8 @@ ul {
   width: 25%;
   color: $beige;
   border-radius: $radius;
-  background-color: $accent;
-  border: 2px $light-brown outset;
+  background-color: $text-color;
+  border: 2px $accent outset;
 }
 
 
