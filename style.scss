@@ -14,11 +14,17 @@ $black: #2B2624;
 $radius: 3px;
 $section-border: 2px solid $border-color;
 
+@mixin flex-values($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
 * {
   outline: none;
   font-family: $font-stack;
   color: $text-color;
-  background-color: $beige;
 }
 
 footer {
@@ -53,16 +59,50 @@ ul {
   display: flex;
   justify-content: space-between;
 }
-
-.banner {
-  border-top: 5px solid $text-color;
+.about-section {
+  background-color: $accent;
+}
+.about-photos {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
 }
 
-.carousel, .form {
+.about-pic {
+  width: 40%;
+}
+
+.arrow {
+  // border: 2px solid pink;
+  height: 100%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5em;
+}
+
+.banner {
+  border-top: 5px solid $border-color;
+}
+
+.carousel {
+  background-image: url('lippel_photos/table1-1.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.carousel-container {
+  @include flex-values(row, space-between, center);
+}
+
+.carousel-container, .form {
   border: $section-border;
   width: 100%;
   height: 400px;
   margin-bottom: 30px;
+  padding: 20px;
 }
 
 .contact-form {
@@ -93,6 +133,12 @@ ul {
   padding-right: 10px;
 }
 
+.img-container {
+  width: 100%;
+  @include flex-values(row, center, center);
+}
+
+
 .parallax {
   z-index: 1;
   img {
@@ -117,10 +163,19 @@ ul {
   border: 1px solid $text-color;
 }
 
-
 .section-title {
   text-align: center;
   margin-top: 50px;
+}
+
+#about1 {
+  background-image: url("lippel_photos/workshop.JPG");
+  background-size: contain;
+}
+
+#about2 {
+  background-image: url("lippel_photos/workshop2.JPG");
+  background-size: contain;
 }
 
 #logo {
